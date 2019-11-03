@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Victoria Flooring LTD</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap">
+<link media="screen and (max-device-width: 320px)" rel="stylesheet" href="mobilestyle.css" />
+
+
+<body>
+	<div class="container">
+		<div class="top-navbar">
+			<p class="p2">Contact us: 01843 225855 </p>
+			<p class="p1">Open 7 days a week Monday - Saturday 8.30am - 5.30pm Sunday 10am - 4.30pm</p>
+		</div>
+		<img class="titlelogo" src="logo.png">
+	</div>
+		<!-- Navigation bar -->
+	<div class="main-nav">
+		<div class="inside-nav">
+		<ul class="gap-inside">
+			<li class="inside-nav-bttn"><a href="">Home</a> </li>
+			<li class="inside-nav-bttn"><a href="">Contact Us</a> </li>
+			<li class="inside-nav-bttn"><a href="">Services</a> </li>
+
+		</ul>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="outer-wrapper">
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+					  <!-- Full-width images with number-->
+					  <div class="mySlides fade">
+					    <div class="numbertext">1 / 3</div>
+					    <img class="logo"src="img1.jpg" style="width:100%">	   
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">2 / 3</div>
+					    <img class="logo"src="img2.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">3 / 3</div>
+					    <img class="logo"src="img3.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">4 / 4</div>
+					    <img class="logo"src="img4.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">5 / 5</div>
+					    <img class="logo"src="img5.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">6 / 6</div>
+					    <img class="logo"src="img6.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">7 / 7</div>
+					    <img class="logo"src="img7.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">8 / 8</div>
+					    <img class="logo"src="img8.jpg" style="width:100%">
+					  </div>
+			</div>
+			<!-- Scripts for gallery -->
+			<div>
+						<script type="text/javascript">var slideIndex = 1;
+						showSlides(slideIndex);
+
+						// Next/previous controls
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+
+						// Thumbnail image controls
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+						      slides[i].style.display = "none";
+						  }
+						  for (i = 0; i < dots.length; i++) {
+						      dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";
+						  dots[slideIndex-1].className += " active";
+						}
+						</script>
+						<script type="text/javascript">var slideIndex = 0;
+						showSlides();
+
+						function showSlides() {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  for (i = 0; i < slides.length; i++) {
+						    slides[i].style.display = "none";
+						  }
+						  slideIndex++;
+						  if (slideIndex > slides.length) {slideIndex = 1}
+						  slides[slideIndex-1].style.display = "block";
+						  setTimeout(showSlides, 5000); // Change image every 2 seconds
+						}</script>
+			</div>
+			<div class="image-container">
+					<div class="overlay-product">
+						<img class="product" src="carpet.png">
+						<div class="product-text">Carpets</div>
+						<div class="more-info-bttn">more info</div>
+					</div>
+						
+					<div class="overlay-product">
+						<img class="product" src="rug.png">
+						<div class="product-text">Rugs</div>
+						<div class="more-info-bttn">more info</div>
+					</div>
+
+					<div class="overlay-product">
+						<img class="product" src="vinyl.png">
+						<div class="product-text">Vinyl</div>
+						<div class="more-info-bttn">more info</div>
+					</div>
+
+					<div class="overlay-product">
+						<img class="product" src="underlay.png">
+						<div class="product-text">Underlay</div>
+						<div class="more-info-bttn">more info</div>
+					</div>	
+			</div>
+			</div>	
+		</div>
+	</div>
+	<div>
+		<img class="footer-map" src="footer map.png">
+	</div>
+	<footer>
+		<li>About us</li>
+		<li>Contact us</li>
+		<li>Testimonials</li>
+	</footer>
+	
+</body>
+</html>
